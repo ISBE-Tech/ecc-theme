@@ -24,7 +24,7 @@
 			<link rel="stylesheet" href="<?php echo get_bloginfo('template_url');?>/style.css" type="text/css" media="all">
 			<style type="text/css">
 				body{
-					background: blue;
+					background: black;
 				}
 				
 				body > .container{
