@@ -1,0 +1,1301 @@
+/** style.css
+
+ * 
+
+ * Theme Name:	The Bootstrap OLD
+
+ * Theme URI:	http://en.wp.obenland.it/the-bootstrap/
+
+ * Description:	A WordPress Theme based on Bootstrap, from Twitter. It features a 100% responsive layout, a superb gallery and image handling with a custom image meta widget and carousel for gallery post-formats, the Glyphicon Icon set, a clean and simple design and a lot more! The Bootstrap runs on HTML5 and CSS3, a 12-column grid and comes with custom jQuery plugins. See the Bootstrap documentation on GitHub for reference.
+
+ * Author:		Konstantin Obenland
+
+ * Author URI:	http://en.wp.obenland.it/
+
+ * Version:		2.0.1
+
+ * Tags:		black, blue, white, light, custom-background, custom-header, custom-menu, featured-images, flexible-header, flexible-width, full-width-template, left-sidebar, microformats, post-formats, right-sidebar, sticky-post, theme-options, threaded-comments, translation-ready, two-columns
+
+ * Text Domain:	the-bootstrap
+
+ * Domain Path:	/lang
+
+ *
+
+ * License:		GNU General Public License v3.0
+
+ * License URI:	http://www.gnu.org/licenses/gpl-3.0.html
+
+ *
+
+ *
+
+ *	Copyright (C) 2012 Konstantin Obenland <konstantin@obenland.it>
+
+ *
+
+ *	This program is free software: you can redistribute it and/or modify
+
+ *	it under the terms of the GNU General Public License as published by
+
+ *	the Free Software Foundation, either version 3 of the License, or
+
+ *	(at your option) any later version.
+
+ *
+
+ *	This program is distributed in the hope that it will be useful,
+
+ *	but WITHOUT ANY WARRANTY; without even the implied warranty of
+
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+
+ *	GNU General Public License for more details.
+
+ *
+
+ *	You should have received a copy of the GNU General Public License
+
+ *	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+ */
+
+
+
+
+
+/* =Elements
+
+-------------------------------------------------------------- */
+
+
+
+blockquote cite:before {
+
+	content: '\2014 \00A0';
+
+}
+
+
+
+blockquote cite {
+
+	color: #999999;
+
+	display: block;
+
+	font-size: 13px;
+
+	line-height: 18px;
+
+}
+
+
+
+figure {
+
+	margin: 0;
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6, .clear {
+
+	clear: both;
+
+}
+
+
+
+
+
+/* =Classes
+
+-------------------------------------------------------------- */
+
+
+
+.assistive-text {
+
+	clip: rect(1px, 1px, 1px, 1px);
+
+	position: absolute !important;
+
+}
+
+
+
+body > .container {
+
+	margin: 18px auto;
+
+}
+
+
+
+/* Right Content */
+
+.sidebar-content #primary,
+
+.sidebar-content #attachment-comment {
+
+	float: right;
+
+	margin: 0 20px 0 0;
+
+}
+
+
+
+.block {
+
+	display: block;
+
+}
+
+
+
+
+
+/* =Page
+
+-------------------------------------------------------------- */
+
+
+
+#page {
+
+	background-color: #FFFFFF;
+
+	margin-right: -20px;
+
+	padding: 14px 0 0;
+
+}
+
+
+
+#header-image {
+
+	display: block;
+
+}
+
+
+
+#menu-alert {
+
+	margin: 4px 0 0;
+
+	padding: 6px 35px 6px 14px;
+
+	position: absolute;
+
+}
+
+
+
+#branding hgroup,
+
+#header-image,
+
+.entry-content {
+
+	margin-bottom: 18px;
+
+}
+
+
+
+.entry-attachment {
+
+	margin-bottom: 36px;
+
+}
+
+
+
+.single #author-info,
+
+.author #author-info,
+
+.single article.post,
+
+.single article.page {
+
+	margin-bottom: 54px;
+
+}
+
+
+
+#author-info,
+
+article.post,
+
+article.page {
+
+	margin-bottom: 72px;
+
+}
+
+
+.page-header,
+
+
+.entry-content {
+
+	word-wrap: break-word;
+
+}
+
+
+
+.post-password-form legend {
+
+	font-size: inherit;
+
+}
+
+
+
+.entry-content .twitter-tweet-rendered {
+
+    max-width: 100% !important;
+
+}
+
+
+
+
+
+/* =Comments
+
+-------------------------------------------------------------- */
+
+
+
+#comments-title {
+
+	border-bottom: 1px solid #EEEEEE;
+
+	font-size: 19.5px;
+
+    margin: 0 0 27px;
+
+}
+
+
+
+#comment,
+
+.entry-content iframe,
+
+.entry-content embed {
+
+	max-width: 100%;
+
+}
+
+
+
+.commentlist > li {
+
+	margin-bottom: 36px;
+
+}
+
+
+
+.commentlist ul.children {
+
+	margin: 10px 0 18px;
+
+	list-style: none;
+
+}
+
+
+
+#reply-title {
+
+	position: relative;
+
+}
+
+
+
+#reply-title small {
+
+	position: absolute;
+
+	right: 0;
+
+	top: 7px;
+
+}
+
+
+
+
+
+/* =Sidebar
+
+-------------------------------------------------------------- */
+
+
+
+.form-search {
+
+	margin: 0;
+
+}
+
+
+
+.widget {
+
+	word-wrap: break-word;
+
+}
+
+
+
+.widget .wp-caption {
+
+	display: inline-block;
+
+}
+
+
+
+
+
+/* =Images
+
+-------------------------------------------------------------- */
+
+
+
+.entry-content .post-thumbnail {
+
+	margin: 0 20px 20px 0;
+
+}
+
+
+
+.entry-attachment .thumbnail.attachment-table {
+
+	display: table;
+
+	margin: 0 auto;
+
+}
+
+
+
+.thumbnail > img {
+
+	width: auto\9; /* Cure IE8 max-width bug */
+
+}
+
+
+
+img.wp-smiley {
+
+	border: none;
+
+	margin-bottom: 0;
+
+	margin-top: 0;
+
+	padding: 0;
+
+}
+
+
+
+.gallery-columns-3.thumbnails [class*="span"] {
+
+	width: 29.3%;
+
+}
+
+.gallery-columns-5.thumbnails [class*="span"] {
+
+	width: 15.9%;
+
+}
+
+.gallery-columns-6.thumbnails [class*="span"] {
+
+	width: 12.6%;
+
+}
+
+.gallery-columns-7.thumbnails [class*="span"] {
+
+	width: 10.2%;
+
+}
+
+
+
+
+
+/* =Footer
+
+-------------------------------------------------------------- */
+
+
+
+#colophon .credits {
+
+	margin: 0;
+
+}
+
+
+
+#site-generator {
+
+	float: right;
+
+	font-family: Georgia, "Bitstream Charter", serif;
+
+	font-style: italic;
+
+}
+
+
+
+#site-generator a {
+
+	background: url("img/wordpress.png") no-repeat scroll left center transparent;
+
+	color: #787878;
+
+	display: inline-block;
+
+	line-height: 16px;
+
+	padding-left: 20px;
+
+	text-decoration: none;
+
+}
+
+
+
+#site-generator.footer-nav-menu a {
+
+	margin-top: 10px;
+
+}
+
+
+
+table .label {
+
+	background-color: transparent;
+
+	border-radius: none;
+
+	color: inherit;
+
+	font-size: inherit;
+
+	text-transform: inherit;
+
+}
+
+
+
+
+
+/* =Jetpack Support
+
+-------------------------------------------------------------- */
+
+
+
+.comment-subscription-form > input[type=checkbox] {
+
+	position: absolute;
+
+}
+
+
+
+.comment-subscription-form > label {
+
+	min-height: 18px;
+
+    padding-left: 18px;
+
+}
+
+
+
+
+
+/* =Bootstrap Adjustments
+
+-------------------------------------------------------------- */
+
+
+
+.navbar-fixed-top,
+
+.navbar-fixed-bottom {
+
+	position: fixed;
+
+}
+
+
+
+#comment,
+
+.thumbnail {/*
+
+	-moz-box-sizing: border-box;
+
+	-webkit-box-sizing: border-box;
+
+	box-sizing: border-box;*/
+
+}
+
+
+
+.label .post-edit-link,
+
+.label .comment-edit-link {
+
+	color: #FFFFFF;
+
+}
+
+
+
+.navbar-search {
+
+	height: 34px;
+
+}
+
+
+
+.pagination span {
+
+	background-color: #f5f5f5;
+
+	color: #999999;
+
+	cursor: default;
+
+}
+
+
+
+.pagination span.dots {
+
+	background-color: #FFFFFF;
+
+}
+
+
+
+
+
+/* =WordPress Core
+
+-------------------------------------------------------------- */
+
+
+
+.aligncenter {
+
+    display:block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+.alignright {
+
+    float:right;
+
+    margin: 0 0 20px 20px;
+
+}
+
+
+
+.alignleft {
+
+    float:left;
+
+    margin: 0 20px 20px 0;
+
+}
+
+
+
+.wp-caption {
+
+	max-width: 100%;
+
+}
+
+
+
+.wp-caption .wp-caption-text,
+
+.gallery-caption,
+
+.entry-caption {
+
+	padding: 0 9px 9px;
+
+	text-align: center;
+
+}
+
+
+
+.wp-caption .wp-caption-text {
+
+	padding-top: 9px;
+
+}
+
+
+
+.wp-caption.alignnone {
+
+    margin: 5px 20px 20px 0;
+
+}
+
+
+
+.wp-caption.alignleft {
+
+    margin: 5px 20px 20px 0;
+
+}
+
+
+
+.wp-caption.alignright {
+
+    margin: 5px 0 20px 20px;
+
+}
+
+
+
+.sticky {}
+
+.bypostauthor {}
+
+
+
+
+
+/* =Responsiveness
+
+-------------------------------------------------------------- */
+
+
+
+@media (max-width: 767px) {
+
+	body {
+
+		padding:0;
+
+	}
+
+	.container {
+
+		width: auto;
+
+		padding: 0 10px;
+
+	}
+
+	#page {
+
+		margin: 0;
+
+		padding: 10px;
+
+	}
+
+	.thumbnail[class*="span"],
+
+	.gallery [class*="span"] .thumbnail {
+
+		display: table;
+
+		float: left;
+
+	}
+
+	.carousel .item > img {
+
+		width: 100%;
+
+	}
+
+	.thumbnails > li {
+
+		float: left;
+
+		margin-left: 20px;
+
+	}
+
+	.gallery-columns-2.thumbnails > li:nth-child(2n+1),
+
+	.gallery-columns-3.thumbnails > li:nth-child(3n+1),
+
+	.gallery-columns-4.thumbnails > li:nth-child(4n+1),
+
+	.gallery-columns-5.thumbnails > li:nth-child(5n+1),
+
+	.gallery-columns-6.thumbnails > li:nth-child(6n+1),
+
+	.gallery-columns-7.thumbnails > li:nth-child(7n+1),
+
+	.gallery-columns-8.thumbnails > li:nth-child(8n+1),
+
+	.gallery-columns-1.thumbnails > li {
+
+		margin-left:0;
+
+	}
+
+	.gallery-columns-2.thumbnails [class*="span"] {
+
+		width: 47.4%;
+
+	}
+
+	.gallery-columns-3.thumbnails [class*="span"] {
+
+		width: 29.9%;
+
+	}
+
+	.gallery-columns-4.thumbnails [class*="span"] {
+
+		width: 21.2%;
+
+	}
+
+	.gallery-columns-6.thumbnails [class*="span"] {
+
+		width: 12.4%;
+
+	}
+
+	.gallery-columns-7.thumbnails [class*="span"] {
+
+		width: 9.9%;
+
+	}
+
+	.gallery-columns-8.thumbnails [class*="span"] {
+
+		width: 8.7%;
+
+	}
+
+	.sidebar-content #primary,
+
+	.sidebar-content #attachment-comment {
+
+		float: none;
+
+		margin: inherit;
+
+	}
+
+	#s {
+
+		display: inline-block;
+
+	}
+
+	#site-generator,
+
+	#site-generator.footer-nav-menu a {
+
+		float: none;
+
+		margin-top: 5px;
+
+	}
+
+	textarea[class*="span"] {
+
+		height: auto;
+
+	}
+
+	.navbar-fixed-top, .navbar-fixed-bottom {
+
+		margin: 0;
+
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 778px) {
+
+	#page {
+
+		margin-right: -15px;
+
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+	.dl-horizontal dt {
+
+		width: 85px;
+
+	}
+
+	.dl-horizontal dd {
+
+		margin-left: 95px;
+
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	#page {
+
+		margin-right: -30px;
+
+		padding: 24px 0 10px;
+
+	}
+
+	.sidebar-content #primary,
+
+	.sidebar-content #attachment-comment {
+
+		margin-right: 30px;
+
+	}
+
+	.wp-caption {
+
+		display: table;
+
+	}
+
+}
+
+
+@media (min-width: 769px) {
+
+body {background:url(images/body-bg.png) repeat-y top center;}
+
+
+#left-col {
+		float:left;
+		padding:45px 0 0 11px;
+		margin-top:-40px;
+		margin-bottom:40px;
+		position: relative;
+}
+
+
+
+.left-logo {
+		float:left;
+		padding:40px 0 30px 0;
+}
+
+.left-button {
+		padding-bottom:21px;
+}
+
+.left-search {
+	padding:41px 0 0 0;
+}
+
+.left-icons {
+		padding:148px 0 108px 0;
+}
+
+#right-col {
+	float:left;
+
+}
+
+	
+	
+	#headleft {
+	width:500px;
+	float:left;
+
+}
+
+.get-connected { float:right; padding:57px 0 0 0; }
+
+.navbar .nav {margin-left:-20px;}
+
+.headnav { float:left;}
+
+.navbar-inverse .navbar-inner {
+background-color:transparent;
+background-image:none;
+border-color:transparent;
+}
+
+.navbar-inverse .nav li.dropdown>.dropdown-toggle .caret {
+border-top-color: #fff;
+border-bottom-color: #fff;
+}
+
+
+.navbar .nav>li>a {
+float: left;
+padding: 4px 10px 4px;
+color: #fff;
+text-shadow:none;
+}
+
+.navbar-inverse .nav .active>a, .navbar-inverse .nav .active>a:hover, .navbar-inverse .nav .active>a:focus {
+color: #ffffff;
+background-color:transparent;
+}
+
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+
+text-decoration: none;
+background-color:transparent;
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none;
+}
+
+
+.navbar-inverse .nav li.dropdown.open>.dropdown-toggle, .navbar-inverse .nav li.dropdown.active>.dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active>.dropdown-toggle {
+background-color:transparent;
+}
+
+
+.navbar-inner {
+
+padding-left: 0x;
+padding-right: 0;
+background-color:none;
+background-image:none;
+filter:none;
+border:none;
+-webkit-border-radius:none;;
+-moz-border-radius:none;
+border-radius:none;
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none;
+}
+
+#headline{
+	width:217px;
+	margin-top:110px;
+	float:right;
+	text-align:center;	
+}
+
+#mn-module-scroll li {
+
+background-color: #fff!important;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+clear: both;
+color: #000;
+display: block;
+float: left;
+margin: 0px 0px 4px;
+padding: 5px 3px;
+position: relative;
+text-decoration: none;
+width: 100%;
+}
+
+
+
+#primary {
+	float: left;
+	padding:15px 0 15px 0;
+}
+
+#content {
+	float:left;
+	margin:0;
+}
+
+
+#content-right {
+	float:left;
+	margin:40px 0 40px 0;
+}
+
+}
+
+#page {background-color:transparent;
+}
+
+#left-col {
+		background: #CE472A;
+		/*background:#798fc2; */
+		
+}
+
+
+
+.left-icons h2 {
+	color:#fff;
+	font-weight:normal;
+	font-size:14px;
+	margin:0;
+	padding:0 0 15px 0;
+}
+
+.left-icon {
+		float:left;
+		margin:0 13px 0 0;
+}
+
+.left-icon.last {
+	margin:0;
+}
+
+
+
+
+
+
+#head-top {
+		height:83px;
+		text-align:left;margin-bottom:20px;
+}
+
+
+
+
+#head-nav {
+
+	height:21px;
+	margin:28px 0 0 0;
+
+}
+
+.center {text-align:center!important;}
+
+
+
+
+
+
+
+
+#headline ul {
+		list-style-type:none;
+		padding:0;
+		margin:0;
+		text-align:center;
+}
+
+
+#headline ul li > a {
+		padding:0;
+		margin:3px 0 3px 0;
+		font-size:14px;
+		color:#798fc2;
+		text-decoration:none;
+}
+
+.sb-search-box {width:110px;
+-webkit-border-radius:none;;
+-moz-border-radius:none;
+border-radius:none;
+
+}
+
+#sb-search-button {margin-top:5px;
+-webkit-border-radius:none;
+-moz-border-radius:none;
+border-radius:none!important;
+background:#4d69ac;
+color:#fff;
+text-shadow:none;
+
+}
+
+.input-append .add-on:last-child, .input-append .btn:last-child, .input-append .btn-group:last-child>.dropdown-toggle {
+-webkit-border-radius:none!important;
+-moz-border-radius:none!important;
+border-radius:none!important;
+}
+
+
+.red { color:#d25b46!important; }
+
+
+
+
+.banners {margin:0 0 40px 0; }
+h3 {
+	color:#8b8271;
+	font-size:16px;
+	line-height:20px;
+}
+
+#colophon {
+	text-align:center;
+	/*margin:0 0 40px 0;*/
+	margin-left: auto;
+	
+
+}
+
+article.page {
+margin-bottom: 0;
+}
+.bottom-banner {
+	float:left;
+}
+
+/*
+.bottom-border{
+border-style:solid; 
+}
+*/
+	
+.bottom-banner img { 
+float:left;
+margin-right:3px;
+}
+
+@media (max-width: 768px) {
+	
+	#top-home-graphic { text-align:center; }
+#top-home-graphic img {margin-top:20px; }
+
+.bottom-banner { 
+text-align:center;
+}
+
+.bottom-banner img {
+margin-top:10px;
+float:none;
+}
+
+	.navbar .nav>li>a {
+display:block;
+}
+	
+	#left-col {display:none;}
+	#headleft {text-align:center;float:none;}
+	#aio-slideshow {display:none;}
+	
+	#headright {clear:both; text-align:center;float:none;}
+	
+	#head-top {
+		height:83px;
+		text-align:center;margin-bottom:40px;
+}
+
+.navbar-inverse .navbar-inner {
+background-color: #798fc2;
+background-image:none;
+overflow:visible;
+filter:none;
+border-color: #40558b;
+}
+
+.navbar-inverse .nav-collapse .nav>li>a, .navbar-inverse .nav-collapse .dropdown-menu a {
+color: #fff;
+}
+.navbar-inverse .nav-collapse .nav>li>a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+background-color: #40558b;
+color:#fff;
+}
+
+.navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar[disabled] {
+color: #ffffff;
+background-color: #40558b;
+}
+	.navbar-inner {
+min-height: auto!important;
+}
+}
+
+
+	
+	.contact-information {color:#fff!important;}
+	
+	.home-img {/*
+	border:1px solid #798fc2;
+	*/
+}
+
+/* End of file style.css */
+
+/* Location: ./wp-content/themes/the-bootstrap/style.css */
+
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+.navbar-inverse .nav li.dropdown.open>.dropdown-toggle, .navbar-inverse .nav li.dropdown.active>.dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active>.dropdown-toggle {
+background-color: transparent;
+color: #ffffff;
+}
+
+
+.entry-title {font-size:18px;margin:0;padding:0;}
+
+.contact-pill {
+padding:5px 10px;
+background:#fff;
+margin-left:15px;
+border-radius:10px;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+}
+
+.news-pill {float:left;padding:5px 10px;background:#fff;margin-top:15px;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;color:#000;}
+
+
+#searchform {
+float: left;
+
+}
+
+
+
+
+
